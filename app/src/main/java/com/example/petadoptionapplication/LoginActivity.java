@@ -25,12 +25,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void handleText(View v){
-        if(Objects.equals(((EditText) v.findViewById(R.id.usernameField)).getText(), username1)
-                && Objects.equals(((EditText) v.findViewById(R.id.passwordField)).getText(), password1)){
+        if(Objects.equals(((EditText)findViewById(R.id.usernameField)).getText().toString(), username1)
+                && Objects.equals(((EditText)findViewById(R.id.passwordField)).getText().toString(), password1)){
             openAnimalActivity();
         }
-        else if(Objects.equals(((EditText) v.findViewById(R.id.usernameField)).getText(), username2)
-                && Objects.equals(((EditText) v.findViewById(R.id.passwordField)).getText(), password2)){
+        else if(Objects.equals(((EditText)findViewById(R.id.usernameField)).getText().toString(), username2)
+                && Objects.equals(((EditText)findViewById(R.id.passwordField)).getText().toString(), password2)){
             openAnimalActivity();
         }
         else{
