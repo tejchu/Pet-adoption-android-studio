@@ -1,5 +1,8 @@
 package com.example.petadoptionapplication;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MockCredentials {
 
     //adopters
@@ -15,11 +18,19 @@ public class MockCredentials {
 
     //dogs
     public static final String animalRex = "Rex";
+            //new Animal("Rex", 20.5, "curly", true);
+
     public static final String animalMax = "Max";
     //cats
     public static final String animalSparky = "Sparky";
     //parrot
     public static final String animalChio = "Chio";
 
+    public static final List<String> animals = new ArrayList<String>(){{
+        animals.add(animalRex);
+        animals.add(animalMax);
+        animals.add(animalChio);
+        animals.add(animalSparky);
+    }};
 
 }
